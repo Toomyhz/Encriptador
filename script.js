@@ -23,6 +23,8 @@ function encriptarTexto(){
         }
     }
     document.getElementById('output').value = encriptedText;
+    var parrafo = document.getElementById('copy-text')
+    parrafo.style.display = "block";
 }
 
 function desencriptarTexto(){
@@ -38,8 +40,16 @@ function desencriptarTexto(){
     document.getElementById('output').value = decriptedText;
 }
 
+
 function copyText() {
     var copyText = document.getElementById("output");
     copyText.select();
     document.execCommand("copy");
+}
+
+function limpiar(){
+    document.getElementById('input').value = "";
+    document.getElementById('output').value = "";
+    var parrafo = document.getElementById('copy-text')
+    parrafo.style.display = "none";
 }
