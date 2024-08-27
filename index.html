@@ -11,18 +11,21 @@
         <h1>Encriptador de texto</h1>
         <div class="container-2">
             <textarea id="input" placeholder="Escribe aquí tu texto"></textarea>
-            <div class="actions">
+            <div class="actions div-container">
                 <button id="encrypt" onclick="encriptarTexto()">Encriptar</button>
                 <button id="decrypt" onclick="desencriptarTexto()">Desencriptar</button>
             </div>
             <textarea id="output" placeholder="Texto encriptado"></textarea>
             <p id="copy-text">Puedes copiar el texto creado!!</p>
-            <div class="tools">
+            <div class="tools div-container">
                 <button id="copy" onclick="copyText()">Copiar</button>
                 <button id="clean" onclick="limpiar()">Limpiar</button>
             </div>
         </div>
     </main>
+    <footer>
+        <p>Hecho por <a href="https://github.com/Toomyhz" target="_blank" class="github-text">ToomyHz</a></p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
